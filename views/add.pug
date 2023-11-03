@@ -1,0 +1,9 @@
+extends layout 
+block content 
+    main.container
+    h1.text-center= title 
+    form(action="/add" method="post")
+        label(for="") Titulo de la Tarea
+        input(type="text", name ="title", requerid)
+        button.add-button(type="submit") Agregar 
+    a.back-button(href="/") 👈🏻 Volver
